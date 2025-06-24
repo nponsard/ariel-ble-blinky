@@ -1,0 +1,13 @@
+imports:
+  - git:
+      url: https://github.com/nponsard/ariel-os
+      branch: feat/nrf-ble
+    dldir: ariel-os
+
+apps:
+  - name: ariel-ble-blinky
+    context:
+      - nrf52dk
+      - nrf52840dk
+    selects:
+      - ble-peripheral
